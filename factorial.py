@@ -1,10 +1,11 @@
-# factorial.py
+"""Calculating factorial script."""
 
 import time
 
 final_list = []
 
 def factorial(n):
+    """Calculating factorial."""
 
     time.sleep(.1)
 
@@ -16,13 +17,14 @@ def factorial(n):
     return fac
 
 def sum_factorial():
+    """Calculating sum factorial."""
 
     for i in range(50):
         final_list.append(factorial(i))
 
     result=sum(final_list)
 
-    print("Final SUM = {}".format(result))
+    print(f"Final SUM = {result}")
 
     return result
 
